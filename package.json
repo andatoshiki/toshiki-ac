@@ -1,6 +1,6 @@
 {
-  "name": "air-conditioner",
-  "description": "云空调，便携小空调",
+  "name": "portable-ac",
+  "description": "web-based air-conditioner, portable web AC",
   "version": "0.1.2",
   "private": true,
   "author": {
