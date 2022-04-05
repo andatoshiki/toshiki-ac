@@ -154,8 +154,8 @@ export const toggleMode =
 
     const recommendedSlogan = (mode: AcMode, temperature: number) =>
       `We recommend you to set AC's${
-        mode === "cold" ? "cooling" : "heating"
-      } ${temperature} at${
+        mode === "cold" ? " cooling at" : " heating at"
+      } ${temperature} degrees ${
         mode === "cold" ? "above" : "below"
       }, for maintaining sustainability!`;
 
