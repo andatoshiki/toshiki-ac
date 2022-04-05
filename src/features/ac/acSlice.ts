@@ -120,7 +120,7 @@ export const increaseTemperature = (): AppThunk => (dispatch, getState) => {
   if (currentValue < maxTemperature) {
     dispatch(increment());
   } else {
-    dispatch(setMessage("已经是最大温度啦！"));
+    dispatch(setMessage("Already maximum temp！"));
     dispatch(setOpen(true));
   }
 };
@@ -134,7 +134,7 @@ export const decreaseTemperature = (): AppThunk => (dispatch, getState) => {
   if (currentValue > minTemperature) {
     dispatch(decrement());
   } else {
-    dispatch(setMessage("已经是最小温度啦！"));
+    dispatch(setMessage("Already minimum temp！"));
     dispatch(setOpen(true));
   }
 };
@@ -153,11 +153,11 @@ export const toggleMode =
     const goodHotTemperature = 20;
 
     const recommendedSlogan = (mode: AcMode, temperature: number) =>
-      `建议将空调的制${
-        mode === "cold" ? "冷" : "热"
-      }温度调至 ${temperature} 度以${
-        mode === "cold" ? "上" : "下"
-      }，为节能减排贡献一份力量！`;
+      `We recommend you to set AC's${
+        mode === "cold" ? "cooling" : "heating"
+      } ${temperature} at${
+        mode === "cold" ? "above" : "below"
+      }, for maintaining sustainability!`;
 
     if (mode === "cold" && currentTemperature < goodColdTemperature) {
       dispatch(setMessage(recommendedSlogan("cold", goodColdTemperature)));

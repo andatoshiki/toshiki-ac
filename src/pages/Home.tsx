@@ -47,7 +47,7 @@ function Home() {
             component="h1"
             gutterBottom
           >
-            便携小空调
+            Portable AC
           </Typography>
           <ProTip />
           <AirConditioner
@@ -63,7 +63,7 @@ function Home() {
                   window.open("/#/rc", "_blank", "width=300, height=400");
                 }}
               >
-                独立遥控器
+                Remote Control
               </Button>
             </Box>
           </div>

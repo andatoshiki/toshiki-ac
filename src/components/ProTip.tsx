@@ -17,7 +17,7 @@ export default function ProTip() {
   return (
     <Typography align="center" className={classes.root} color="textSecondary">
       <EmojiObjectsOutlinedIcon />
-      Tip: 为你的夏日带去清凉！
+      Tip: Bring some coolness to your Summer！
     </Typography>
   );
 }
