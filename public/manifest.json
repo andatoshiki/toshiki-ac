@@ -1,11 +1,11 @@
 {
-  "short_name": "小空调",
-  "name": "便携小空调",
+  "short_name": "ac",
+  "name": "portable-ac",
   "icons": [
     {
       "src": "favicon.png",
       "type": "image/png",
-      "sizes": "64x64"
+      "sizes": "180x180"
     }
   ],
   "start_url": ".",
